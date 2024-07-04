@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 51px;
+    background-color: #333;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+}
+.menu ul li a:hover{
+    background-color:#C93F1D;
+}
+.section-formulario picture{
+    width: 100%;
+    height: 100vh;
+}
+.section-formulario picture img{
+    width: 100%;
+    height: 100%;
+}
+.section-formulario article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 30px;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 6px;
+}
+.section-formulario article h2{
+    font-size: 40px;
+    line-height: 52px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+.section-formulario article .calcula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.section-formulario article .calcula img{
+    height: 500px;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+
+.section-formulario article .select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px 20px;
+    background-color: #F9F9F9;
+    border-radius: 6px;
+}
+.section-formulario article .select p{
+    padding: 30px 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+.section-formulario article .select div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.section-formulario article .select div label{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+.section-formulario article .select div select{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #BF452A;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.section-formulario article .select div select option{
+    font-size: 18px;
+}
+.section-formulario article .select button{
+    margin-top: 20px;
+    padding: 8px 30px;
+    background-color: #BF452A;
+    border:2px solid #BF452A;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px; 
+}
+.section-formulario article .select button:hover{
+    background-color: white;
+    color: #BF452A;
+
+}
+.section-formulario article .select #informacion {
+    color: black;
+}
+
+/**********ENVIOS NACIONALES*************/
+
+.imgNacional{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.imgNacional img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.Nacional{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 6px;
+    padding: 30px;
+}
+.Nacional picture{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    display: block;
+    width: 550px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.Nacional picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.Nacional div{
+    margin-left: 30px;
+    padding-left: 600px;
+}
+.Nacional div h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.Nacional div p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.Nacional div button{
+    padding: 10px;
+    background-color: #BF452A;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.formSeguimiento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 6px;
+    padding: 30px;
+}
+.formSeguimiento h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.formSeguimiento form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.formSeguimiento form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+.formSeguimiento form label{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.formSeguimiento form input{
+    padding: 10px;
+    border-radius: 6px;
+    margin-top:10px;
+}
+.formSeguimiento form button{
+    padding: 10px;
+    background-color: #BF452A;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 40px auto 0;
+    max-width: 100px;
+}
+.imgSeguimiento{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+.imgSeguimiento img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgCliente{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+.imgCliente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.formCliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 6px;
+    padding: 30px;
+}
+.formCliente h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.formCliente form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.formCliente form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+.formCliente form label{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.formCliente form input{
+    padding: 10px;
+    border-radius: 6px;
+    margin-top:10px;
+}
+.formCliente form button{
+    padding: 10px;
+    background-color: #BF452A;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 40px auto 0;
+    max-width: 100px;
+}
+.section-contacto{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.section-contacto picture{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.section-contacto picture img{
+    width: 100%;
+}
+.section-contacto article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.section-contacto article h2{
+    font-size: 40px;
+    line-height: 52px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+.container-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 30px;
+}
+.container-form picture{
+    width: 300px;
+    height: 500px;
+}
+.container-form picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.formulario{
+    width: 50%;
+    height: 500px;
+    padding: 30px 40px;
+    border: 2px solid white;
+    background-color: white;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color:#646363 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario form input{
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto 10px;
+    border-radius: 4px;
+    border: 2px solid #b6b4b4;
+}
+.formulario form .checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.formulario form .checkbox input{
+    width: auto;
+    margin-right: 10px;
+}
+.formulario form .checkbox p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario form .checkbox p a{
+    color: black;
+}
+.formulario form .checkbox p a:hover{
+    color: #DB4232;
+}
+.formulario form textarea{
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin: 10px auto 20px;
+    border-radius: 4px;
+    border: 2px solid #b6b4b4;
+}
+.formulario form button{
+    padding: 10px;
+    width: 50%;
+    border-radius: 4px;
+    border: 2px solid #DB4232;
+    background-color:#DB4232;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+}
+.formulario form button:hover{
+    background-color:#ffffff;
+    color: #DB4232;
+}
+
+.invalid{
+    color: red;
+}
+.valid{
+    color: black;
+}
+

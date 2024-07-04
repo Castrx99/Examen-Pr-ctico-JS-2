@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Uship</title>
+</head>
+<body>
+    <nav class="menu">
+        <img src="img/logo.png" alt="Logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="EnvioNacional.html">Envío Nacional</a></li>
+            <li><a href="EnvioInternacional.html">Envío Internacional</a></li>
+            <li><a href="Seguimiento.html">Seguimiento</a></li>
+            <li><a href="AccesoClientes.html">Acceso a Cliente</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <picture class="imgSeguimiento">
+        <img src="img/uship-contacto.png" alt="paquete">
+    </picture>
+    <section class="formSeguimiento">
+        <h2>SEGUIMIENTO DE SU PAQUETE</h2>
+        <form action="#" id="formulario" onsubmit= "return check_form();">
+            <p class="form-group">
+                <label for="codigo">Código de seguimiento</label>
+                <input type="text" id="codigo" name="codigo" >
+            </p>
+            <button id="boton">Enviar</button>
+        </form>
+    </section>
+    <script src="JS/seguimiento.js"></script>
+</body>
+</html>

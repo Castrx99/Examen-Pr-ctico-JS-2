@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Uship</title>
+</head>
+<body>
+    <nav class="menu">
+        <img src="img/logo.png" alt="Logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="EnvioNacional.html">Envío Nacional</a></li>
+            <li><a href="EnvioInternacional.html">Envío Internacional</a></li>
+            <li><a href="Seguimiento.html">Seguimiento</a></li>
+            <li><a href="AccesoClientes.html">Acceso a Cliente</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="section-contacto">
+        <picture>
+            <img src="img/enviar-paqueteria.png" alt="paqueteria">
+        </picture>
+        <article>
+            <h2>Contacta con nosotros</h2>
+            <div class="container-form">
+                <picture>
+                    <img src="img/uship-contacto.png" alt="Paqueteria">
+                </picture>
+                <div class="formulario" id="formulario">
+                    <form action="#" id="formulario" onsubmit= "return check_form();">
+                        <label for="name">Nombre
+                            <input type="text" id="nombre">
+                        </label>
+                        <label for="phone">Teléfono
+                            <input type="tel" id="telefono">
+                        </label>
+                        <label for="email">Email
+                            <input type="email" id="email">
+                        </label>
+                        <label for="mensaje">Comentarios
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="3"></textarea>
+                        </label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="aceptaPolitica" value="Aceptar">
+                            <p>Acepta la política de <a href="#">Protección de Datos</a></p>
+                        </div>
+                        <button id="boton">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

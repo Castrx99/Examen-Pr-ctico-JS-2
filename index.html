@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Uship</title>
+</head>
+<body>
+    <nav class="menu">
+        <img src="img/logo.png" alt="Logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="EnvioNacional.html">Envío Nacional</a></li>
+            <li><a href="EnvioInternacional.html">Envío Internacional</a></li>
+            <li><a href="Seguimiento.html">Seguimiento</a></li>
+            <li><a href="AccesoClientes.html">Acceso a Cliente</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="section-formulario">
+        <picture>
+            <img src="img/enviar-paqueteria.png" alt="paquetes">
+        </picture>
+        <article>
+            <h2>¿Cuánto me va a costar mi envío?</h2>
+            <div class="calcula">
+                <img src="img/Tarifas.png" alt="tarifas">
+                <div class="select">
+                    <div class="select1">
+                        <label for="destino">Indique el destino de su envío</label>
+                            <select name="destino" id="destino">
+                                <option value="" id="lugar"></option>
+                            </select>
+                    </div>
+                    <div class="select2">
+                        <label for="peso">Indique el peso aproximado </label>
+                            <select name="peso" id="peso">
+                                <option value="" id="kilos"></option>
+                            </select>
+                    </div>
+                    <button onclick="mostrarInformacion()">Calcular</button>
+                    <p id="informacion"></p>
+                </div>
+            </div>
+            
+        </article>
+        
+    </section>
+    <script src="JS/select.js"></script>
+</body>
+</html>
